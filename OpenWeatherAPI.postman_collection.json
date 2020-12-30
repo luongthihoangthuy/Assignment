@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "0ad6edb6-e9cc-4a6e-bb98-a6bf505d419e",
+		"name": "OpenWeatherAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET - Search weather by Zip Code",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/weather?zip=94040,us&appid=81d13a40ba56efacd24488b5b54276ce",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "zip",
+							"value": "94040,us"
+						},
+						{
+							"key": "appid",
+							"value": "81d13a40ba56efacd24488b5b54276ce"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Search weather by CityName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=London&appid=81d13a40ba56efacd24488b5b54276ce",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						},
+						{
+							"key": "appid",
+							"value": "81d13a40ba56efacd24488b5b54276ce"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Search weather by CityName and StateCode",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=London,UK&appid=81d13a40ba56efacd24488b5b54276ce",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London,UK"
+						},
+						{
+							"key": "appid",
+							"value": "81d13a40ba56efacd24488b5b54276ce"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
